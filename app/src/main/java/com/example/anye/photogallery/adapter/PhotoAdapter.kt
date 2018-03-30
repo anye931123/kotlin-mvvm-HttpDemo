@@ -20,7 +20,7 @@ class PhotoAdapter(private val context: Context,
         val inflater=LayoutInflater.from(context)
         val binding=DataBindingUtil.inflate<PhotoItemBinding>(inflater, R.layout.photo_item,parent,false)
 
-        return PhotoHolder(binding)
+        return PhotoHolder(binding,context)
 
     }
 
